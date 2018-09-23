@@ -5,11 +5,10 @@ using System.CodeDom.Compiler;
 using System.Reflection;
 
 
-namespace Execute
+namespace CompileInMemory
 {
     public class AppDomainProxy : MarshalByRefObject
     {
-        // Compile C# code block in memory and return the assembly
         // Borrowed a lot of code from https://www.codeproject.com/Tips/715891/Compiling-Csharp-Code-at-Runtime
         public static Assembly CompileCSharpCode(string code)
         {
